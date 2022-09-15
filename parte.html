@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parte.css">
+    <title>Página de Controle</title>
+</head>
+<body>
+    
+    <header><h1>Controle de Funcionários</h1></header>
+    
+    <div><span><h2>DADOS</h2></span></div>
+    <div id="inputes">
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="NOME">
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" placeholder="IDADE">
+        <label for="Funcao">Função:</label>
+        <input type="text" id="funcao" placeholder="CARGO">
+        <label for="identificacao">Identificação:</label>
+        <input type="text" id="identificacao" placeholder="RF">
+
+    </div>
+
+    <div id="butt">
+        <button id="but" onclick="cadastro.gerar()">GERAR</button>
+        <button id="but2" onclick="cadastro.remover()">REMOVER</button>
+    
+    </div>
+
+    <div id="table">
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>IDADE</th>
+                    <th>FUNÇÃO</th>
+                    <th>RF</th>
+                    <th>AÇÃO</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="./parte.js"></script>
+</body>
+</html>

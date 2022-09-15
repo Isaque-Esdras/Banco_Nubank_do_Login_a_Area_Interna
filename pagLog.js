@@ -3,6 +3,7 @@ var inpute2 = document.getElementById('inPass')
 
 function entrar() {
     
+
     // Senha do Cliente gerado pelo aplicativo, exemplo: 
 
     var login = "maldonado@gmail.com"
@@ -10,7 +11,10 @@ function entrar() {
 
     if (inpute1.value != login || inpute2.value != senha) {
         window.alert("Login ou senha Inválido.")
+        return false
     }else{
-        return true
+        confirm('Confirmar Login ?')
+        window.location.href = "parte.html"
+        
     }
 }
